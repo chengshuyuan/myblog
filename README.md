@@ -3,6 +3,8 @@ Django框架实现的一个博客系统
 # 软件版本
 python： 2.7
 Django: 1.6
+markdown
+Pygments
 # 其他
 - 使用markdown来进行格式控制(服务器需要安装markdown)
 - 实现了代码高亮
@@ -14,3 +16,5 @@ python manage.py syncdb
 //windows下
 manage.py syncdb
 ```
+# 发布操作
+http://www.tuicool.com/articles/yeMBZf
