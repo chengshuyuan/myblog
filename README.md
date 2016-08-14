@@ -1,5 +1,6 @@
 # myblog
 Django框架实现的一个博客系统
+效果： www.chengshuyuan.top
 # 软件版本
 python： 2.7
 Django: 1.6
