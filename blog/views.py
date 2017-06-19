@@ -17,6 +17,11 @@ def index(request):
          'category_list' : category_list
     })
 
+def about(request):
+    return render_to_response('about.html', {
+
+    })
+
 
 def blog_detail(request, blog_id):
     blog = models.Blog.objects.get(id=blog_id)
@@ -40,6 +45,8 @@ def blog_category(request, category_id):
          'author' : author,
          'category_list' : category_list
     })
+
+
 
 
 def download(request):

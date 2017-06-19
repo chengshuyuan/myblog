@@ -16,8 +16,9 @@
 	<div id="navigator">
         <ul id="navList">
             <li><a id="MyLinks1_HomeLink" class="menu" href="/">第二课堂</a></li>
-            <li><a id="MyLinks1_MyHomeLink" class="menu" href="/">首页</a></li>
-            <li><a id="MyLinks1_NewPostLink" class="menu" rel="nofollow" href="/download/">资料下载</a></li>
+            <!--<li><a id="MyLinks1_NewPostLink" class="menu" rel="nofollow" href="/download/">资料下载</a></li>-->
+            <li><a id="MyLinks1_MyHomeLink" class="menu" href="/about/">关于我</a></li>
+            <li><a id="MyLinks1_MyAdminLink" class="menu" href="/admin/">管理</a></li>
         </ul>
 	    <div class="blogStats"></div><!--end: blogStats -->
 	</div><!--end: navigator 博客导航栏 -->
@@ -56,14 +57,14 @@
 	        <div id="blog-news">
                 {%for author in author%}
                 <div id="profile_block">
-                    昵称：<a href="http://home.cnblogs.com/u/JDragons/">{{author.name}}</a>
-                    <br>邮箱：<a href=1">{{author.email}}</a>
+                    昵称：{{author.name}}</a>
+                    <br>邮箱：{{author.email}}</a>
                     <br>学校：<a href="http://www.uestc.edu.cn/">电子科技大学</a>
 
                     <br><a href="{{author.csdn}}">我的csdn博客</a>
                     <br><a href="{{author.github}}">我的gtihub</a>
 
-                    <br>签名：<a href="">{{author.description}}</a>
+                    <br>签名：{{author.description}}</a>
                 </div>
                 {%endfor%}
             </div>

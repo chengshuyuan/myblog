@@ -10,5 +10,6 @@ urlpatterns = patterns('',
     url(r'^detail/(\d+)/$', views.blog_detail),
     url(r'^blogcategory/(\d+)/$',views.blog_category),
     url(r'^download/',views.download),
+    url(r'^about/', views.about),
     url(r'^downloadcategory/(\d+)/$',views.download_category),
 )
